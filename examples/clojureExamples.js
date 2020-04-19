@@ -17,6 +17,10 @@ const addToOne = addToFactory(1);
 console.log(['addToOne + 3'], addToOne(3));
 console.log(['addToOne + 3'], addToFactory(1)(3));
 
+
+
+
+
 function func(value = 1) {
   // const value = 2; -> Block scoped variables cannot share name with 'var' variables or parameters in the same block scope
   {
@@ -36,7 +40,12 @@ function func(value = 1) {
   }
 }
 
+// trzykrotne wywołanie funkcji
 console.log(['func()()()'], func()()());
+
+
+
+
 
 function createCounter() {
   let state = 0;
